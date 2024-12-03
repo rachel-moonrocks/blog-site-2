@@ -4,7 +4,7 @@ layout: post
 date: 2017-02-17T03:33:56.321Z
 path: "/2017-02-16/"
 category: "general"
-description: first entry on the new site
+description: First entry on the new site
 ---
 
 Hi, and welcome to the new site!

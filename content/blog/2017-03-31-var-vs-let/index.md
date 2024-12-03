@@ -87,9 +87,9 @@ for (var i=0; i < 3; i++){
     console.log(i);
   }, 1000)
 }
-// 3
-// 3
-// 3
+=> 3
+=> 3
+=> 3
 for (var i = 0; i < 3; i++) {
   setTimeout(function(thisIsTheValue){
     return ()=> {
@@ -97,9 +97,9 @@ for (var i = 0; i < 3; i++) {
     };
   }(i), 1000);
 }
-// 0
-// 1
-// 2
+=> 0
+=> 1
+=> 2
 ```
 When we use *var* to declare variables, we need to enclose function calls in an *IIFE*. This closure allows us to maintain access to the changing variable i on each iteration of the loop when the function is finally invoked.
 When we use *let* , since the variable is scoped to the block, we no longer have to enclose it in a function to make sure that we keep the correct variable reference.
@@ -109,14 +109,14 @@ for (let i=0; i < 3; i++){
     console.log(i);
   }, 1000)
 }
-// 0
-// 1
-// 2
+=> 0
+=> 1
+=> 2
 ```
 Wow, so little code!
 <h4>Other things to note with let: </h4>
 
 - Redeclaring a variable with *let* results in a SyntaxError
-- uUsing *let*  in switch statements will also result in a SyntaxError since different case statements belong to a single block!
+- Using *let*  in switch statements will also result in a SyntaxError since different case statements belong to a single block!
 
 Check out the [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) on let!
