@@ -11,11 +11,11 @@ module.exports = {
   siteMetadata: {
     title: `Blog`,
     author: {
-      name: `Rachel Munoz`,
+      name: `Rachel Muñoz`,
       // summary: `who lives and works in San Francisco building useful things.`,
     },
-    description: `A collection of thoughts and musings.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `A collection of thoughts and musings about coding.`,
+    siteUrl: `https://rmunoz.netlify.app/`,
     social: {
       // linkedin: `rachelmunoz`,
     },
