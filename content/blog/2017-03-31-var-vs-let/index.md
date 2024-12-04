@@ -16,17 +16,20 @@ However, it is definitely possible to declare a variable without the use of *var
 ```
 function sayMyName(){
   myName = ‘rachel’;
-  console.log(myName) // 'rachel'
+  console.log(myName)
 }
+=> 'rachel'
+
 /* here we are outside of the function */
-console.log(myName); // ‘rachel’ 
+console.log(myName); // => ‘rachel’ 
 function myNameWithVar(){
   var nameUsingVar = ‘rachel’;
-  console.log(nameUsingVar); // ‘rachel'
+  console.log(nameUsingVar); // => ‘rachel'
 }
 
 /* here we are outside of the function */
-console.log(nameUsingVar) // Uncaught ReferenceError
+console.log(nameUsingVar) 
+=> Uncaught ReferenceError
 ```
 
 
@@ -38,12 +41,12 @@ When we use *var* and *let* these declarations are hoisted. var is hoisted to th
 
 ```
 function hoistedExampleVar(){
-  console.log(iAmHoisted); // undefined
+  console.log(iAmHoisted); // => undefined
   var iAmHoisted = ‘value declared here’;
-  console.log(iAmHoisted !== undefined); // true
+  console.log(iAmHoisted !== undefined); // => true
 }
 function hoistedExampleLet(){
-  console.log(iAmHoisted); // Uncaught ReferenceError
+  console.log(iAmHoisted); // => Uncaught ReferenceError
   let iAmHoisted = 'this is a let assignment';
 }
 ```
@@ -58,10 +61,10 @@ function usingVar(){
   
   if ( true ){
     var x = ’Now my value is this’;
-    console.log(x) // ’Now my value is this’;
+    console.log(x) // => ’Now my value is this’;
   }
   
-  console.log(x); // ’Now my value is this’;
+  console.log(x); // => ’Now my value is this’;
 }
 
 function usingLet(){
@@ -69,10 +72,10 @@ function usingLet(){
   
   if ( true ){
     let x = ’Now my value is this’;
-    console.log(x) // ’Now my value is this’;
+    console.log(x) // => ’Now my value is this’;
   }
   
-  console.log(x); // ’This is my value’;
+  console.log(x); // => This is my value’;
 }
 ```
 <h4>But porque let?</h4>
