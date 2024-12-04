@@ -17,8 +17,6 @@ Gatsby is the static generator I used to build this site. Gatsby uses React comp
 
 I thought Gatsby was a perfect choice for an all inclusive site where I can write about software, show off software I have built, and put a face to my name. With this site I can now keep it all my links and blog posts nicely packaged in one place!
 
-If you'd like to check out my older blog posts, here's a <a href="https://medium.com/@r_munoz" target="_blank"> link to my Medium </a> where they were originally posted.
-
 Upcoming for this blog:
   * redesign using a custom template (currently using the Lumen Starter) 
   * ability to add comments
