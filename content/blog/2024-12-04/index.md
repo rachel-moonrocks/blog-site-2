@@ -96,7 +96,9 @@ curl -v "https://example-app/api/structures" \
 | state	| The state where the structure is located. | Yes. |
 | country | The country where the structure is located. | Yes. |
 | postal_code |	The postal code for the structure's address. | Yes. |
-| structure_status | The status of the structure. | No. |
+| structure_status | The status of the structure.* | No. |
+
+*See Structure Status below.
 
 ### `/structures/bulk`
 
@@ -175,7 +177,7 @@ This endpoint accepts the following parameters.
 | --- | --- |
 | structure_status | Retrieve structures with a specific status (see below). |
 
-### **Structure Status**
+### Structure Status
 
 | Status | Description |
 | --- | --- |
