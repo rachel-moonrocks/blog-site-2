@@ -11,13 +11,11 @@ module.exports = {
   siteMetadata: {
     title: `Blog`,
     author: {
-      name: `Rachel Muñoz`,
-      // summary: `who lives and works in San Francisco building useful things.`,
+      name: `Rae Muñoz`,
     },
     description: `A collection of thoughts and musings about coding.`,
     siteUrl: `https://rmunoz.netlify.app/`,
     social: {
-      // linkedin: `rachelmunoz`,
     },
   },
   plugins: [
